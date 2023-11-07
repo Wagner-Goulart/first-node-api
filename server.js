@@ -1,4 +1,4 @@
-import { createServer } from "node:http"
+//import { createServer } from "node:http";
 
 // const server = createServer((request, response)=>{
 //     response.write("oi")
@@ -45,7 +45,7 @@ server.put("/videos/:id", async (request, reply) => {
   return reply.status(204).send();
 });
 
-server.delete("/videos/:id",async (request, reply) => {
+server.delete("/videos/:id", async (request, reply) => {
   const videoId = request.params.id;
 
   await database.delete(videoId);
@@ -54,5 +54,6 @@ server.delete("/videos/:id",async (request, reply) => {
 });
 
 server.listen({
+  host: "0.0.0.0",
   port: process.env.PORT ?? 3333,
 });
