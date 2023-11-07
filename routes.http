@@ -1,28 +1,28 @@
-POST http://localhost:3333/videos
+POST https://node-first-api-hgt5.onrender.com/videos
 Content-Type: application/json
 
 {
-    "title": "Video 02",
+    "title": "Video Teste do Render",
     "description": "Descrição video 02",
     "duration": 180
 }
 
 ###
 
-GET http://localhost:3333/videos
+GET https://node-first-api-hgt5.onrender.com/videos
 
 ###
 
-PUT  http://localhost:3333/videos/965a2c52-b1c7-4634-81a6-bc16e7c46170
+PUT  https://node-first-api-hgt5.onrender.com/videos/965a2c52-b1c7-4634-81a6-bc16e7c46170
 Content-Type: application/json
 
 {
-    "title": "Video 01 ATUALIZADO",
+    "title": "Video Iou",
     "description": "Descrição video 01 alterado",
     "duration": 180
 }
 
 ###
 
-DELETE   http://localhost:3333/videos/5d301cee-d0f9-4792-af66-2582edb284dc
+DELETE   https://node-first-api-hgt5.onrender.com/videos/965a2c52-b1c7-4634-81a6-bc16e7c46170
 Content-Type: application/json
